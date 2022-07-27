@@ -20,11 +20,12 @@
         <span class="ms-2"><span class="text-primary fs-2 fw-bold">G</span>regsList</span>
       </a>
     </nav>
+
+  </header>
+  <main>
     <button class="btn btn-primary" onclick="app.carsController.viewCars()">cars</button>
     <button class="btn btn-primary" onclick="app.housesController.viewHouses()">houses</button>
     <button class="btn btn-primary">jobs</button>
-  </header>
-  <main>
     <div class="container-fluid">
       <!-- SECTION listings -->
       <section id="listings" class="row">
@@ -42,32 +43,84 @@
         </div> -->
         <!-- ---- -->
       </section>
-      <!-- SECTION form -->
-      <section id="form" class="row justify-content-center p-3">
-        <form class="col-10 bg-white p-3 elevation-2" onsubmit="app.carsController.createCar()">
+      <section id="listings" class="row">
+        <!-- STUB house template -->
+        <!-- <div class="col-4 p-3">
+          <div class="bg-white elevation-2">
+            <img class="img-fluid" src="https://thiscatdoesnotexist.com" alt="">
+            <div class="p-2"> 
+              <h4 class="text-center">Bedroom | Bathroom | Sqft</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corrupti possimus neque quas,
+                dignissimos itaque at aspernatur.</p>
+              <p class="text-end text-success m-0">$<b>100</b></p>
+            </div>
+          </div>
+        </div>  -->
+
+      </section>
+      <!-- SECTION cars form -->
+      <section id="forms" class="row justify-content-center p-3">
+        <!-- <form class="col-10 bg-white p-3 elevation-2" onsubmit="app.carsController.createCar()">
           <h3 class="text-primary">List Your Car</h3>
           <div class="row">
-            <div class="col-4">
+            <div class="col-6">
               <label class="form-label" for="make">Make</label>
               <input class="form-control" type="text" minlength="5" id="make" name="make">
             </div>
-            <div class="col-4">
+            <div class="col-6">
               <label class="form-label" for="model">Model</label>
               <input class="form-control" type="text" id="model" name="model">
             </div>
-            <div class="col-4">
+            <div class="col-6">
               <label class="form-label" for="year">Year</label>
               <input class="form-control" type="number" id="year" name="year">
             </div>
-            <label class="form-label" for="price">Price</label>
-            <input class="form-control" type="number" min="1" id="price" name="price">
-            <label class="form-label" for="img">Image</label>
-            <input class="form-control" type="text" id="img" name="img">
-            <label class="form-label" for="description">Description</label>
-            <textarea class="w-100 form-control" name="description" id="description" rows="5"></textarea>
-            <button type="submit" class="btn btn-primary w-100 p-2 mt-3 text-light">Submit</button>
+            <div class="col-6">
+              <label class="form-label" for="price">Price</label>
+              <input class="form-control" type="number" min="1" id="price" name="price">
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="img">Image</label>
+              <input class="form-control" type="text" id="img" name="img">
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="description">Description</label>
+              <textarea class="w-100 form-control" name="description" id="description" rows="5"></textarea>
+              <button type="submit" class="btn btn-primary w-100 p-2 mt-3 text-light">Submit</button>
+            </div>
           </div>
-        </form>
+        </form> -->
+      </section>
+      <!-- SECTION houses form -->
+      <section id="houses-form" class="row justify-content-center p-3">
+        <!-- <form class="col-10 bg-white p-3 elevation-2" onsubmit="app.housesController.createHouse()">
+          <h3 class="text-primary">List Your House</h3>
+          <div class="row">
+            <div class="col-6">
+              <label class="form-label" for="make">Bedroom</label>
+              <input class="form-control" type="number" id="bedroom" name="bedroom">
+            </div>
+            <div class="col-6">
+              <label class="form-label" for="model">Bathroom</label>
+              <input class="form-control" type="number" id="bathroom" name="bathroom">
+            </div>
+            <div class="col-6">
+              <label class="form-label" for="year">Sqft</label>
+              <input class="form-control" type="number" id="sqft" name="sqft">
+            </div>
+            <div class="col-6">
+              <label class="form-label" for="price">Price</label>
+              <input class="form-control" type="number" min="1" id="price" name="price">
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="img">Image</label>
+              <input class="form-control" type="text" id="img" name="img">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary w-100 p-2 mt-3 text-light">Submit</button>
+            </div>
+          </div>
+        </form> -->
       </section>
     </div>
   </main>
