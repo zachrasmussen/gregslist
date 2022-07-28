@@ -21,8 +21,8 @@ function _drawForm() {
 export class HousesController {
   constructor() {
     console.log('houses controller loaded')
-    // ProxyState.on('houses', _drawHouses)
-    // ProxyState.on('houses', saveState)
+    ProxyState.on('houses', _drawHouses)
+    ProxyState.on('houses', saveState)
     // ProxyState.on('houses', test)
     loadState()
     _drawHouses()

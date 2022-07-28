@@ -30,7 +30,7 @@ export class House {
 
 export const housesForm =
     `
-        <form class="col-10 bg-white p-3 elevation-2">
+        <form class="col-10 bg-white p-3 elevation-2" onsubmit="app.housesController.createHouse()">
           <h3 class="text-primary">List Your House</h3>
           <div class="row">
             <div class="col-6">
