@@ -15,8 +15,8 @@ class AppState extends EventEmitter {
 
   /** @type {import('./Models/House').House[]} */
   houses = [
-    new House({ bedroom: 4, bathroom: 2, sqft: 1500, price: 350000, img: 'https://photos.zillowstatic.com/fp/69f5adc3f3f30152f92440db67eb3834-cc_ft_1536.webp' }),
-    new House({ bedroom: 5, bathroom: 4, sqft: 4250, price: 700000, img: 'https://photos.zillowstatic.com/fp/69f5adc3f3f30152f92440db67eb3834-cc_ft_1536.webp' })
+    new House({ bedroom: 4, bathroom: 2, sqft: 1500, price: 350, img: 'https://photos.zillowstatic.com/fp/69f5adc3f3f30152f92440db67eb3834-cc_ft_1536.webp' }),
+    new House({ bedroom: 5, bathroom: 4, sqft: 4250, price: 700, img: 'https://photos.zillowstatic.com/fp/ee95c2297e5b28710233505589fec5ec-cc_ft_1536.webp' })
   ]
 }
 
